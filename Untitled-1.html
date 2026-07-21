@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OtoTrustMe | Solusi Otomotif Terpercaya</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#ff6b00", // Vibrant Orange
+                    "on-primary": "#ffffff",
+                    "secondary": "#ff6b00", // Orange as main accent
+                    "background": "#0a0a0a", // Deep Black
+                    "on-background": "#ffffff",
+                    "surface": "#121212", // Dark Surface
+                    "on-surface": "#ffffff",
+                    "surface-variant": "#1f1f1f",
+                    "on-surface-variant": "#a1a1a1",
+                    "outline": "#333333",
+                    "outline-variant": "#262626",
+                    "primary-container": "#2a1500",
+                    "on-primary-container": "#ff6b00",
+                    "surface-container-low": "#151515",
+                    "surface-container": "#1a1a1a",
+                    "surface-container-high": "#222222",
+                    "surface-container-highest": "#2a2a2a",
+                    "surface-container-lowest": "#050505"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Montserrat"],
+                    "caption": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "display-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 8px;
+            font-family: monospace;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(10, 10, 10, 0.95) 30%, rgba(10, 10, 10, 0.4) 100%);
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="bg-background/80 backdrop-blur-md border-b border-outline-variant/50 docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="font-display-lg text-headline-md tracking-tight text-on-surface">OtoTrustMe</div>
+<div class="hidden md:flex items-center gap-8">
+<div class="hidden md:flex items-center gap-8">
+    <a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary h-20 flex items-center" href="#">Services</a>
+
+    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors h-20 flex items-center"
+       href="https://www.figma.com/design/XqGfAsZXr36W8ZDHuNyGws/Untitled?node-id=0-1&t=Mgl8xj1T1mT5vVHG-1"
+       target="_blank">
+       Figma
+    </a>
+
+    <!-- Link Tambahan 2 -->
+    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors h-20 flex items-center"
+       href="https://canva.link/tezkmsisy3fdqau"
+       target="_blank">
+       PPT
+    </a>
+</div>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A high-end luxury black sedan parked in a futuristic, dimly lit minimalist showroom with sharp geometric architecture. The car's polished surface reflects a sophisticated atmosphere with orange and deep black highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqshAslo-ebdLDmZPdiAfR2RJJDvPrwwlcCeIgc6XETMAv_7GPKfGbU4L5WA-l3V5bPlg39yecNJpOYqsKhMFtRg5X7FZHU-iCTXny080-VA6YIbIkin8lcSfdJwyMlR6WdGRkoYEVOrq8JzBsvqn9-fQ6EkCIUvNvm4JSzY56tAFQDkyRv7hACFG3tLaIRnFAjtGgDhLNyCtSDIR9yIsJs2TIMgtoXd2BSvWs_qcNXy_70Lqg1qYg')"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full py-24">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg text-white mb-6 leading-tight">
+                    Solusi Otomotif Terpercaya untuk Anda
+                </h1>
+<p class="font-body-lg text-body-lg text-white/80 mb-10">
+                    Beli, jual, dan servis kendaraan dengan transparansi penuh dan standar kualitas tertinggi. Kepercayaan Anda adalah prioritas utama kami.
+                </p>
+
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="bg-surface py-16 border-b border-outline-variant">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="space-y-2">
+<div class="font-display-lg text-display-lg text-on-surface">10rb+</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Mobil Terjual</div>
+</div>
+<div class="space-y-2">
+<div class="font-display-lg text-display-lg text-primary">500+</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Inspeksi Harian</div>
+</div>
+<div class="space-y-2">
+<div class="font-display-lg text-display-lg text-on-surface">98%</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Pelanggan Puas</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-24 bg-background">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Layanan Unggulan Kami</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service Card 1 -->
+<div class="group p-8 bg-surface border border-outline-variant rounded-xl hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300">
+<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-4xl" data-icon="verified">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Inspeksi Profesional</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Pengecekan mendalam 175 titik oleh teknisi ahli untuk memastikan kondisi mobil dalam standar tertinggi.
+                    </p>
+</div>
+<!-- Service Card 2 -->
+<div class="group p-8 bg-surface border border-outline-variant rounded-xl hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300">
+<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-4xl" data-icon="handshake">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Jual Beli Aman</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Proses transaksi transparan dengan perlindungan hukum penuh dan harga yang kompetitif di pasar.
+                    </p>
+</div>
+<!-- Service Card 3 -->
+<div class="group p-8 bg-surface border border-outline-variant rounded-xl hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300">
+<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-4xl" data-icon="payments">payments</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Pembiayaan Mudah</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Solusi kredit dengan bunga kompetitif dan proses persetujuan cepat berkat kemitraan bank terpercaya.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Inventory -->
+<section class="py-24 bg-surface-container-low">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Koleksi Terpilih</h2>
+<p class="text-on-surface-variant font-body-md">Mobil berkualitas dengan garansi mesin 1 tahun</p>
+</div>
+<a class="text-primary font-label-md flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                    Lihat Semua <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Car Card 1 -->
+<div class="bg-surface border border-outline-variant rounded-xl overflow-hidden group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern luxury SUV" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCxamhQdkd_t8Wng4oBqwKW3-Mm0ZkGwfAtgabdgZhD_SL4vIiBhkNKN-WdOnf5kmc9aunNIPYjTCw3mnAWvvlI1NLIa5GiCQF8jCYVhd8p_eVA_Df9mRTHpSyw0rpQvT-9wYI9CjyLGgj2B7yf9Dem1q5PUZkaoqAftwnVK571790UxbYMjD3sej5ZF4j6p8eyyGss4ycdx332oVus45mDcc_pCM1fDaZTmXW2PnEuAAcvyfFBokA"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded tracking-tighter uppercase">BARU MASUK</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Mercedes-Benz E 300</h3>
+<div class="text-primary font-bold font-headline-md">Rp 850jt</div>
+</div>
+<div class="spec-grid mb-6">
+<div class="flex flex-col p-2 bg-surface-container rounded">
+<span class="text-[10px] text-on-surface-variant">TAHUN</span>
+<span class="font-bold text-xs text-on-surface">2021</span>
+</div>
+<div class="flex flex-col p-2 bg-surface-container rounded">
+<span class="text-[10px] text-on-surface-variant">JARAK</span>
+<span class="font-bold text-xs text-on-surface">15k km</span>
+</div>
+<div class="flex flex-col p-2 bg-surface-container rounded">
+<span class="text-[10px] text-on-surface-variant">MESIN</span>
+<span class="font-bold text-xs text-on-surface">2.0L</span>
+</div>
+</div>
+<button class="w-full border border-primary text-primary py-3 rounded font-label-md hover:bg-primary hover:text-on-primary transition-colors">
+                            Detail Kendaraan
+                        </button>
+</div>
+</div>
+<!-- Car Card 2 -->
+<div class="bg-surface border border-outline-variant rounded-xl overflow-hidden group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="BMW 320i" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs6ixeCT4y7gi_i90RGsnRGmg2r0NVYtzHPJ8oI0u6MGVUWLu8bHS9HYP_vJezGXVKiMj88aK2suT-cqls-V2vRKpQNxyc_B6V5cURehdj0yytMbaSGHfmmakcGGFvwe5hAuXJ7rjxGXi_wluWzy2Dph8GwWgnQEMIl4rPbxDXkJNM9J9MZzGkpPLqCHgObSagXxBSsplHBbz_ax9QvBM5PKrhge_ZnXZnWGbBMSYL5-0zGceFymRb"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded tracking-tighter uppercase">HOT DEAL</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">BMW 320i Sport</h3>
+<div class="text-primary font-bold font-headline-md">Rp 725jt</div>
+</div>
+<div class="spec-grid mb-6">
+<div class="flex flex-col p-2 bg-surface-container rounded">
+<span class="text-[10px] text-on-surface-variant">TAHUN</span>
+<span class="font-bold text-xs text-on-surface">2022</span>
+</div>
+<div class="flex flex-col p-2 bg-surface-container rounded">
+<span class="text-[10px] text-on-surface-variant">JARAK</span>
+<span class="font-bold text-xs text-on-surface">8k km</span>
+</div>
+<div class="flex flex-col p-2 bg-surface-container rounded">
+<span class="text-[10px] text-on-surface-variant">MESIN</span>
+<span class="font-bold text-xs text-on-surface">2.0T</span>
+</div>
+</div>
+<button class="w-full border border-primary text-primary py-3 rounded font-label-md hover:bg-primary hover:text-on-primary transition-colors">
+                            Detail Kendaraan
+                        </button>
+</div>
+</div>
+<!-- Car Card 3 -->
+<div class="bg-surface border border-outline-variant rounded-xl overflow-hidden group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Toyota Camry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIAdk-htAs2HqdmMDskhqoI78OSOgPLWI6YEYItC2N11sq3etyuXrWdjLpoO5riyeX7ZDJeGPhE_M1-i4BwQIX-ElU0lLc-82npUtCJ0WuJxZej8jCqAgM4kpSbwpkk8_JObkVGk1LrVhEGxhK8VjFQP3_IqhQNb9iZx_0uIVYpb0ZFObVNbD0lipGjUd823H60O_hAAJHBBbYXB6Dgf33umjBr6CNXnoeaRNta50jCMpLy5sU3Dqx"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Toyota Camry V</h3>
+<div class="text-primary font-bold font-headline-md">Rp 510jt</div>
+</div>
+<div class="spec-grid mb-6">
+<div class="flex flex-col p-2 bg-surface-container rounded">
+<span class="text-[10px] text-on-surface-variant">TAHUN</span>
+<span class="font-bold text-xs text-on-surface">2020</span>
+</div>
+<div class="flex flex-col p-2 bg-surface-container rounded">
+<span class="text-[10px] text-on-surface-variant">JARAK</span>
+<span class="font-bold text-xs text-on-surface">25k km</span>
+</div>
+<div class="flex flex-col p-2 bg-surface-container rounded">
+<span class="text-[10px] text-on-surface-variant">MESIN</span>
+<span class="font-bold text-xs text-on-surface">2.5L</span>
+</div>
+</div>
+<button class="w-full border border-primary text-primary py-3 rounded font-label-md hover:bg-primary hover:text-on-primary transition-colors">
+                            Detail Kendaraan
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section (Bento Grid Style) -->
+<section class="py-24 bg-background">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="bg-surface p-6 rounded-xl border border-outline-variant h-48 flex flex-col justify-center">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1;">verified</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Inspeksi 175 Titik</h4>
+</div>
+<div class="bg-surface-container-highest p-6 rounded-xl h-64 flex flex-col justify-center text-on-surface">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1;">security</span>
+<h4 class="font-headline-md text-headline-md mb-2">Garansi Mesin</h4>
+<p class="text-on-surface-variant font-body-md">Proteksi penuh selama 1 tahun untuk ketenangan Anda.</p>
+</div>
+</div>
+<div class="space-y-4 pt-8">
+<div class="bg-primary p-6 rounded-xl h-64 flex flex-col justify-center text-on-primary">
+<span class="material-symbols-outlined text-on-primary mb-4" style="font-variation-settings: 'FILL' 1;">sell</span>
+<h4 class="font-headline-md text-headline-md mb-2">Harga Transparan</h4>
+<p class="text-on-primary/80 font-body-md">Tanpa biaya tersembunyi, semua rincian jelas sejak awal.</p>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant h-48 flex flex-col justify-center">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1;">history</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Histori Lengkap</h4>
+</div>
+</div>
+</div>
+<div class="absolute -z-10 -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
+</div>
+<div class="lg:pl-12">
+<h2 class="font-headline-lg text-display-lg text-on-surface mb-6">Mengapa Memilih OtoTrustMe?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Kami mendefinisikan ulang standar industri otomotif di Indonesia dengan transparansi dan kejujuran sebagai fondasi utama.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface">Standar Inspeksi Ketat</h5>
+<p class="text-on-surface-variant text-sm">Hanya 1 dari 10 mobil yang lolos kurasi ketat kami.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface">Jaminan Buyback</h5>
+<p class="text-on-surface-variant text-sm">Kami menjamin pembelian kembali kendaraan Anda dengan harga kompetitif.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface">Dukungan 24/7</h5>
+<p class="text-on-surface-variant text-sm">Tim concierge kami siap membantu kebutuhan otomotif Anda kapan saja.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-low text-on-surface overflow-hidden relative">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+<div class="px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Apa Kata Mereka?</h2>
+<p class="text-on-surface-variant font-body-md">Kepuasan pelanggan adalah bukti nyata standar kualitas kami.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-high p-8 rounded-xl border border-outline-variant hover:border-primary/50 transition-colors">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md italic mb-8 text-on-surface-variant">"Proses jual beli sangat transparan. Laporan inspeksinya sangat detail, saya jadi tenang beli mobil bekas di sini."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all" data-alt="Budi Santoso" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5KfkgWvwmVNg3CSfxQ8Ky3kthDEUcN9lXhzNQHXJkkqINqBIy9hQB7Mtu4pXQC6DRynf_CkuP9KA5czs1mnjlNPq4oO8jwM5_wj9_6Y7gXDUzdI24kFfP8kk32tx2i8MKj96dEhrh1V8KCeUavW2kK8nU-05qjGJ8p1BNhB76-C30bYU2ZI_YMTbBNvYkFtY33Jc7bce3PuvLjbD1yeejGI0UD-NlfG0QBA13SITYI5k6nwscvNRU"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Budi Santoso</div>
+<div class="text-xs text-on-surface-variant">Wiraswasta</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-high p-8 rounded-xl border border-outline-variant hover:border-primary/50 transition-colors transform md:translate-y-8">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md italic mb-8 text-on-surface-variant">"Layanan purna jualnya luar biasa. Garansi mesin 1 tahun benar-benar memberikan ketenangan pikiran bagi saya dan keluarga."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all" data-alt="Siska Wijaya" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANMvbhoJhOdsDqj1XNXl-9Asl8ATBDiemuhfsANYVwBM1766i6n7ExaixOQPtl_JabPFv03t-VIGXq9wd1xoxIUp2tb9iRdOCp2Ul3sugGtaPEW7yoKYTSyvUNRn_ZtZ7MViiccI9c5NmeBPrPSjQAB5leEszN6H23WeQUbqqQz9uN88oJDoBN0HjLAI8NVdepJUUNm5DrZZQ0VZRIMDOiTwklLgneGBJwRkUm8h7IDQj4FgtAcUXC"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Siska Wijaya</div>
+<div class="text-xs text-on-surface-variant">Manajer Keuangan</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-high p-8 rounded-xl border border-outline-variant hover:border-primary/50 transition-colors">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md italic mb-8 text-on-surface-variant">"Harga sangat jujur. Tidak ada 'permainan' sales. Kredit disetujui dalam 2 hari saja. Sangat efisien dan profesional!"</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all" data-alt="Anton Pratama" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAumdmm089KrIVfjUe0W_B31eq60lyRUEklLmoY9ryGygcmS60xGhpjenPGyFi3oi6l8PeFsOhk0wy9Bz-jQQQGK4d6BZFSuQyYP3GrAwEymYKM5vwPIQSlLzZpYEtDHs2ehNxKgXUD70iarynNUoDD8tZsxUOyek4pi7kW369rMkpmB4PJusWR5PxnsWI-a4xqN0GMldy6eMYHoYkuYCKG7WAN_bKgdrMVXFsibGs4rN81oFLDm-US"/>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Anton Pratama</div>
+<div class="text-xs text-on-surface-variant">Dokter Spesialis</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant full-width bottom-0 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-16 px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="font-display-lg text-headline-sm text-on-surface">OtoTrustMe</div>
+<p class="text-on-surface-variant text-body-md">
+                Standar baru dalam industri otomotif Indonesia. Transparansi, Kualitas, dan Kepercayaan dalam setiap transaksi.
+            </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:border-primary transition-colors text-on-surface hover:text-on-primary" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:border-primary transition-colors text-on-surface hover:text-on-primary" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.227.412.56.216.96.474 1.38.894.42.42.678.82.894 1.38.163.422.358 1.057.412 2.227.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.249 1.805-.412 2.227-.216.56-.474.96-.894 1.38-.42.42-.82.678-1.38.894-.422.163-1.057.358-2.227.412-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.805-.249-2.227-.412-.56-.216-.96-.474-1.38-.894-.42-.42-.678-.82-.894-1.38-.163-.422-.358-1.057-.412-2.227-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.249-1.805.412-2.227.216-.56.474-.96.894-1.38.42-.42.82-.678 1.38-.894.422-.163 1.057-.358 2.227-.412 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.277.057-2.148.26-2.911.557-.79.306-1.459.717-2.126 1.384-.667.667-1.078 1.335-1.384 2.126-.297.763-.5 1.634-.557 2.911-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.057 1.277.26 2.148.557 2.911.306.79.717 1.459 1.384 2.126.667.667 1.335 1.078 2.126 1.384.763.297 1.634.5 2.911.557 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.277-.057 2.148-.26 2.911-.557.79-.306 1.459-.717 2.126-1.384.667-.667 1.078-1.335 1.384-2.126.297-.763.5-1.634.557-2.911.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.057-1.277-.26-2.148-.557-2.911-.306-.79-.717-1.459-1.384-2.126-.667-.667-1.335-1.078-2.126-1.384-.763-.297-1.634-.5-2.911-.557-1.28-.058-1.688-.072-4.947-.072z"></path><path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-on-surface font-bold mb-6">Layanan</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Beli Mobil</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Jual Mobil</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Tukar Tambah</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Layanan Inspeksi</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Pembiayaan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-surface font-bold mb-6">Perusahaan</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Tentang Kami</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Karir</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Berita</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Hubungi Kami</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-surface font-bold mb-6">Hubungi Kami</h4>
+<div class="space-y-4">
+<div class="flex items-start gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="text-body-md">Jl. Duri Kosambi, Jakarta Barat</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">phone</span>
+<span class="text-body-md">------</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="text-body-md">ototrustme@gmail.com</span>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant px-margin-desktop max-w-container-max mx-auto py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-on-surface-variant text-caption font-caption">
+                © 2026 OtoTrustMe Automotive Excellence. All rights reserved.
+            </div>
+<div class="flex gap-6 text-caption font-caption">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Cookie Settings</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Interaction Script -->
+<script>
+    // Simple scroll effect for navbar
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('shadow-2xl', 'shadow-primary/5');
+        } else {
+            nav.classList.remove('shadow-2xl', 'shadow-primary/5');
+        }
+    });
+
+    // Add reveal animations on scroll
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section > div > div').forEach(el => {
+        el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+        observer.observe(el);
+    });
+</script>
+</body></html>
